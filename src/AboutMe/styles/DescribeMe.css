@@ -2,11 +2,12 @@
 .describe-me-container{
    display: flex;
    justify-content: center;
+   align-items: center;
 }
 .myphoto{
     width: 35%;
     height: 35%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .about-me-heading{
     font-family: "Helvetica Now Display DW",sans-serif;
@@ -21,7 +22,7 @@ font-weight: 400;
 }
 .info-about-me-container{
     padding-top: 10%;
-    width: 25%;
+    width: 35%;
     padding-right: 4rem;
 }
 .description-about-me-paragraph{
@@ -38,14 +39,33 @@ font-weight: 400;
 @media only screen and (max-width: 1000px){
     .description-about-me-paragraph{
         font-size: 1em;
-        width: 100%;
+        width: 90%;
+        text-align: justify;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .info-about-me-container{
-        width: 80%;
+        width: 100%;
+        flex-direction: column;
+        padding:1rem;
+        position: relative;
+        bottom: 80px;
+        
     }
-    
     .myphoto{
-        display: none;
+        width: 80%;
+    
+    }
+    .myphoto:before{
+        opacity: 0.8;
+    }
+    .describe-me-container{
+        flex-direction: column-reverse;
+    }
+    .my-name-paragraph{
+        font-weight: bolder;
+        color: #191919;
+        padding-left: 10px;
     }
   }
   

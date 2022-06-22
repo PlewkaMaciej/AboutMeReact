@@ -1,0 +1,98 @@
+.InterestAndHobbies-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    flex-direction: column;
+}
+.interest-hobbies-heading{
+    font-weight: 800;
+    letter-spacing: -.01em;
+    color: #191919;
+    font-family: "Helvetica Now Display DW",sans-serif;
+}
+.paragraph-and-heading-interestAndHobbiesContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.interest-hobbies-paragraph{
+    font-weight: 500;
+    color: #878a8f;
+    letter-spacing: normal;
+    line-height: 1.875rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-top: 2vh;
+}
+.photo-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    gap: 20px;
+}
+.ksw-Photo{
+    width: 600px;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    object-fit: cover;
+    
+}
+.training-photo{
+    width: 600px;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.ksw-photo-container{
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.ksw-photo-paragraph{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    color: #191919;
+    font-family: "Helvetica Now Display DW",sans-serif;
+}
+.training-photo-container{
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.training-photo-paragraph{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    color: #191919;
+    font-family: "Helvetica Now Display DW",sans-serif;
+}
+@media only screen and (max-width: 1000px){
+    .training-photo{
+        width: 250px;
+        height: 250px;
+    }
+    .ksw-Photo{
+        width: 250px;
+        height: 250px;
+    }
+    .photo-container{
+        flex-direction: column;
+    }
+    .interest-hobbies-paragraph{
+        
+        padding: 8px;
+        font-size: 1rem;
+        
+    }
+    .InterestAndHobbies-container{
+        position: relative;
+        bottom: 120px;
+    }
+  }
