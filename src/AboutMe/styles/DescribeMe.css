@@ -9,7 +9,7 @@
     height: 35%;
     /* border-radius: 50%; */
     transition-timing-function: ease-in;
-    transition: 1s;
+    transition: 1.5s;
 }
 .about-me-heading{
     font-family: "Helvetica Now Display DW",sans-serif;

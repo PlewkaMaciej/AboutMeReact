@@ -1,6 +1,9 @@
 import mLogo from "../photos/letter-m.png"
 import '../styles/Nav.css';
-function Nav() {
+function Nav({setShowForm}) {
+  const showFormFunction=()=>{
+    setShowForm(true)
+  }
     return (
      <nav className="nav-section">
         <div className="m-logo-and-paragraph-name-container">
@@ -12,7 +15,7 @@ function Nav() {
  
  </div>
  <div className="contact-button-container">
- <button className="contact-button-nav">Contact</button>
+ <button onClick={showFormFunction} className="contact-button-nav">Contact</button>
  </div>
      </nav>
     );
