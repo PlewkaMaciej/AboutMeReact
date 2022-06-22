@@ -11,12 +11,12 @@ function InterestsAndHobbies() {
             </div>
             <div className='photo-container'>
                 <div className='ksw-photo-container'>
-                <img className="ksw-Photo" src={kswPhoto} alt="Ksw" />
-                <p className='ksw-photo-paragraph'>KSW 2022 Toruń</p>
+                    <img className="ksw-Photo" src={kswPhoto} alt="Ksw" />
+                    <p className='ksw-photo-paragraph'>KSW 2022 Toruń</p>
                 </div>
                 <div className='training-photo-container'>
-                <img className="training-photo" src={trainingPhoto} alt="trainingPhoto" />
-                <p className='training-photo-paragraph'>Photo from training</p>
+                    <img className="training-photo" src={trainingPhoto} alt="trainingPhoto" />
+                    <p className='training-photo-paragraph'>Photo from training</p>
                 </div>
             </div>
         </div>

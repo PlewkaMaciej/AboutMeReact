@@ -1,97 +1,155 @@
-.main-container-form{
+.main-container-form {
+    display: flex;
+    color: white;
+    font-family: "Helvetica Now Display DW", sans-serif;
     position: fixed;
     width: 50%;
     height: 100%;
     left: 50%;
     z-index: 2;
     animation-name: fromRightToLeft;
-  animation-duration: 2s;
-  background-color: #191919;
+    animation-duration: 2s;
+    background-color: #191919;
 }
+
 @keyframes fromRightToLeft {
-    from {left: 100%;}
-    to {left: 50%;}
-  }
-  .main-container-form{
-    display: flex;
-    color: white;
-    font-family: "Helvetica Now Display DW",sans-serif;
-  }
-  .form-heading{
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+.main-container-formm{
+    animation-name: fromLeftToRight;
+    animation-duration: 2s;
+    left: 100%;
+    
+}
+@keyframes fromLeftToRight {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+.form-heading {
     margin-top: 2vh;
     margin-bottom: 10vh;
-  }
+}
 
 .collapse-button {
-  align-items: center;
-  appearance: none;
-  background-color: #FCFCFD;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #191919;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "Helvetica Now Display DW",sans-serif;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #191919;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Helvetica Now Display DW", sans-serif;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
 }
 
 .collapse-button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .collapse-button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
 }
 
 .collapse-button:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
 }
-.container-for-collapse-button{
+
+.container-for-collapse-button {
     padding: 2vh;
 }
-.form-and-heading-container{
+
+.form-and-heading-container {
+    width: 50%;
     padding-top: 10vh;
     display: flex;
     padding-left: 5vh;
     flex-direction: column;
     align-items: center;
 }
-.contact-form{
+
+.contact-form {
     
     display: flex;
     flex-direction: column;
-    gap:60px;
+    gap: 60px;
     align-items: center;
     text-align: center;
 }
-.user-info-label{
+
+.user-info-label {
     display: flex;
     flex-direction: column;
+    font-family: "Helvetica Now Display DW", sans-serif;
 }
-.submit-input{
+
+.submit-input {
     text-align: center;
     align-items: center;
 }
-.user-message{
+
+.user-message {
     resize: none
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-container-form{
+        flex-direction: column;
+    }
+    .collapse-button {
+        height: 20px;
+        font-size: 10px;
+        width: 100px;
+    }
+    .contact-form{
+        width: 50%;
+
+    }
+    .form-and-heading-container{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 2vh;
+    }
+    .user-message{
+        width: 40vw;
+    }
+    .form-heading{
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    
 }
