@@ -1,6 +1,22 @@
 import '../styles/DescribeMe.css';
 import myphoto from "../photos/myPhoto.png"
+import React, { useState, useEffect } from 'react'
 function DescribeMe() {
+    const [show, setShow] = useState(0);
+    const controlMyImage = () => {
+        if (window.scrollY > 100) {
+            setShow(true)
+        }
+        else {
+            setShow(false)
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', controlMyImage)
+        return () => {
+            window.removeEventListener('scroll', controlMyImage)
+        }
+    }, [])
     return (
         <div className='describe-me-container'>
             <div className='info-about-me-container'>
@@ -18,7 +34,7 @@ function DescribeMe() {
                     creative person who will certainly bring a lot of good to the
                     team.</p>
             </div>
-            <img className="myphoto" src={myphoto} alt="myPhoto" />
+            <img className={`myphoto ${show && 'photo_disapear'}`} src={myphoto} alt="myPhoto" />
         </div>
     );
 }
