@@ -1,0 +1,51 @@
+
+.describe-me-container{
+   display: flex;
+   justify-content: center;
+}
+.myphoto{
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+.about-me-heading{
+    font-family: "Helvetica Now Display DW",sans-serif;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    color: #191919;
+}
+.my-name-paragraph{
+font-weight: 400;
+    letter-spacing: .4em;
+    color: #878a8f;
+}
+.info-about-me-container{
+    padding-top: 10%;
+    width: 25%;
+    padding-right: 4rem;
+}
+.description-about-me-paragraph{
+    font-weight: 500;
+    color: #878a8f;
+    letter-spacing: normal;
+    line-height: 1.875rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-top: 1vh;
+}
+
+ 
+@media only screen and (max-width: 1000px){
+    .description-about-me-paragraph{
+        font-size: 1em;
+        width: 100%;
+    }
+    .info-about-me-container{
+        width: 80%;
+    }
+    
+    .myphoto{
+        display: none;
+    }
+  }
+  

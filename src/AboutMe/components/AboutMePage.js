@@ -1,9 +1,13 @@
 import Nav from "./Nav";
+import DescribeMe from "./DescribeMe";
 function AboutMePage() {
   return (
-   <div className="main-container-aboutMe">
-<Nav/>
-   </div>
+    <>
+    <Nav/>
+<DescribeMe/>
+ 
+   
+   </>
   );
 }
 

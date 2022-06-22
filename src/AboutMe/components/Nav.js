@@ -1,5 +1,5 @@
-import mLogo from "./photos/letter-m.png"
-import './styles/aboutMe.css';
+import mLogo from "../photos/letter-m.png"
+import '../styles/Nav.css';
 function Nav() {
     return (
      <nav className="nav-section">
@@ -12,7 +12,7 @@ function Nav() {
  
  </div>
  <div className="contact-button-container">
- <button className="contact-button-nav">Kontakt</button>
+ <button className="contact-button-nav">Contact</button>
  </div>
      </nav>
     );

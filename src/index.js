@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AboutMePage from './components/AboutMe/AboutMePage';
+import AboutMePage from './AboutMe/components/AboutMePage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
