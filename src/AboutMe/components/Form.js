@@ -17,6 +17,7 @@ function Form({ setShowForm }) {
          event.preventDefault()
     }
     const userIsNoRobot=()=>{
+        
         window.location.reload();
     }
     return (
@@ -29,13 +30,13 @@ function Form({ setShowForm }) {
                     <h1 className='form-heading'>Please fill in the form</h1>
                     <form  onSubmit={checkIfRobotFunction}className="contact-form">
                         <label className='user-info-label' htmlFor="fname">First and last name:
-                            <input type="text" required name="name" />
+                            <input className="form-input" type="text" required name="name" />
                         </label>
                         <label className='user-info-label' htmlFor="email">Email:
-                            <input type="email" required name="email" />
+                            <input className="form-input" type="email" required name="email" />
                         </label>
                         <label className='user-info-label' htmlFor="Phone number">Phone Number:
-                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required name="number" />
+                            <input className="form-input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required name="number" />
                             <small>Format: xxx-xxx-xxx</small>
                         </label>
                         <label className='user-info-label' htmlFor="Message">Message:

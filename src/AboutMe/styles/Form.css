@@ -141,7 +141,7 @@
 .checkbox{
     transform: scale(2);
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     .check-if-robot-container{
         width: 40%;
     }
@@ -155,8 +155,14 @@
     }
     .contact-form{
         width: 50%;
-
+          gap: 10px;
     }
+    .user-info-label{
+        align-items: center;
+    }
+  .form-input{
+    width: 90%;
+  }
     .form-and-heading-container{
         width: 100%;
         padding-left: 0;

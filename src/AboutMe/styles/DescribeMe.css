@@ -65,6 +65,7 @@ font-weight: 400;
     }
     .describe-me-container{
         flex-direction: column-reverse;
+        padding-top: 8vh;
     }
     .my-name-paragraph{
         font-weight: bolder;
