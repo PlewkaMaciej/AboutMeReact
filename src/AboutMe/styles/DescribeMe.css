@@ -49,7 +49,7 @@ font-weight: 400;
         padding-right: 5%;
     }
     .info-about-me-container{
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         padding:1rem;
         position: relative;
