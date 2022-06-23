@@ -142,6 +142,9 @@
     transform: scale(2);
 }
 @media only screen and (max-width: 1000px) {
+    .check-if-robot-container{
+        width: 40%;
+    }
     .main-container-form{
         flex-direction: column;
     }
