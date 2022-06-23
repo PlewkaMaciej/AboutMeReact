@@ -1,0 +1,78 @@
+.MosaicPhotos{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(150px, 1fr));
+    grid-template-rows: repeat(autofit, minmax(150px, 1vw));
+    gap: 10px;
+    
+    height: 1500px;
+    margin: 0 auto;
+    margin: 20px 100px 0px 100px;
+}
+.photo8{
+    background:url(../photos/photo1.jpg) no-repeat;
+    grid-area:1/1/3/6;
+    background-size: cover;
+    background-position: center;
+}
+.photo1{
+    grid-area:1/6/4/9;
+    background:url(../photos/photo2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo2{
+    grid-area:3/1/5/6;
+    background:url(../photos/photo3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo3{
+    grid-area:4/6/5/9;
+    background:url(../photos/photo4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.photo4{
+    grid-area:5/4/7/9;
+    background:url(../photos/photo5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo5{
+    grid-area:5/1/5/4;
+    background:url(../photos/photo6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo6{
+    grid-area:6/1/7/2;
+    background:url(../photos/photo7.jpg) no-repeat;
+    background-size: cover;
+      background-position: center;
+}
+.photo7{
+    grid-area:6/1/7/4;
+    background:url(../photos/photo8.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width: 1000px){
+   .MosaicPhotos{
+    grid-template-columns: repeat(autofit, minmax(50px, 1fr));
+    grid-template-rows: repeat(autofit, minmax(50px, 1vw));
+    width: 100%;
+    margin: 0;
+    position: relative;
+    bottom: 60px;
+   }
+   .photo8{
+    background-position: 50% 50%;
+   }
+   .photo5{
+    background-position: 30% 50%;
+   }
+   .photo4{
+    background-position: 20% 50%;
+   }
+  }
