@@ -23,7 +23,7 @@ function InterestsAndHobbies() {
             <div className='movie-container'>
                 <iframe
                     className='video-of-fav-battle'
-                    src="http://www.youtube.com/embed/9MiwQO-qhpc"
+                    src="https://www.youtube.com/embed/9MiwQO-qhpc"
                     frameborder="0"
                     allow="autoplay; encrypted-media"
                     title="video"
