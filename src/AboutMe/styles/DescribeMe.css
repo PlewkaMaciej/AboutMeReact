@@ -26,6 +26,7 @@ font-weight: 400;
     padding-top: 10%;
     width: 35%;
     padding-right: 4rem;
+    z-index: 2;
 }
 .description-about-me-paragraph{
     font-weight: 500;
