@@ -3,12 +3,21 @@ import React, { useState } from 'react'
 
 function Form({ setShowForm }) {
     const [closeForm, setCloseForm] = useState(null);
+    const [checkIfRobot, setCheckIfRobot] = useState(null);
     const changeShow = () => {
-        
+
         setCloseForm(true)
-        setTimeout(function(){
-            setShowForm(false) }, 2100);
-        
+        setTimeout(function () {
+            setShowForm(false)
+        }, 1000);
+
+    }
+    const checkIfRobotFunction = (event) => {
+         setCheckIfRobot(true)
+         event.preventDefault()
+    }
+    const userIsNoRobot=()=>{
+        window.location.reload();
     }
     return (
         <>
@@ -18,7 +27,7 @@ function Form({ setShowForm }) {
                 </div>
                 <div className='form-and-heading-container'>
                     <h1 className='form-heading'>Please fill in the form</h1>
-                    <form className="contact-form">
+                    <form  onSubmit={checkIfRobotFunction}className="contact-form">
                         <label className='user-info-label' htmlFor="fname">First and last name:
                             <input type="text" required name="name" />
                         </label>
@@ -34,6 +43,13 @@ function Form({ setShowForm }) {
                         </label>
                         <button className='collapse-button'> Send</button>
                     </form>
+                    {checkIfRobot &&
+                     <div className='check-if-robot-container'> 
+                     <input onClick={userIsNoRobot} className="checkbox"type="checkbox" />
+                     <p>I'm not a robot</p>
+                     </div>
+
+                     }
                 </div>
 
             </div>
