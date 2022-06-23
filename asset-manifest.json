@@ -1,18 +1,25 @@
 {
   "files": {
-    "main.css": "/AboutMeReact/static/css/main.b144d740.css",
-    "main.js": "/AboutMeReact/static/js/main.f35eed8e.js",
+    "main.css": "/AboutMeReact/static/css/main.e551e582.css",
+    "main.js": "/AboutMeReact/static/js/main.18c31f48.js",
     "static/js/787.00a70a93.chunk.js": "/AboutMeReact/static/js/787.00a70a93.chunk.js",
     "static/media/myPhoto.png": "/AboutMeReact/static/media/myPhoto.eced9729c5471a3a2f5d.png",
     "static/media/kswPhoto.jpg": "/AboutMeReact/static/media/kswPhoto.ce4d1c54063dbee0d94a.jpg",
+    "static/media/photo5.jpg": "/AboutMeReact/static/media/photo5.8a0a0fae4a43efa571a3.jpg",
+    "static/media/photo2.jpg": "/AboutMeReact/static/media/photo2.460dde56396b0a625389.jpg",
     "static/media/trainingPhoto.jpg": "/AboutMeReact/static/media/trainingPhoto.ba79eeef5e14487d32f5.jpg",
+    "static/media/photo3.jpg": "/AboutMeReact/static/media/photo3.d390af80466ef53dd3e9.jpg",
+    "static/media/photo1.jpg": "/AboutMeReact/static/media/photo1.57cd018714106be2b3b9.jpg",
+    "static/media/photo6.jpg": "/AboutMeReact/static/media/photo6.4b4f8bb95ee281df3db6.jpg",
+    "static/media/photo7.jpg": "/AboutMeReact/static/media/photo7.0abd3c4ffa2aa642dbf8.jpg",
+    "static/media/photo8.jpg": "/AboutMeReact/static/media/photo8.3eb6672db5fed2567aaa.jpg",
     "index.html": "/AboutMeReact/index.html",
-    "main.b144d740.css.map": "/AboutMeReact/static/css/main.b144d740.css.map",
-    "main.f35eed8e.js.map": "/AboutMeReact/static/js/main.f35eed8e.js.map",
+    "main.e551e582.css.map": "/AboutMeReact/static/css/main.e551e582.css.map",
+    "main.18c31f48.js.map": "/AboutMeReact/static/js/main.18c31f48.js.map",
     "787.00a70a93.chunk.js.map": "/AboutMeReact/static/js/787.00a70a93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b144d740.css",
-    "static/js/main.f35eed8e.js"
+    "static/css/main.e551e582.css",
+    "static/js/main.18c31f48.js"
   ]
 }
