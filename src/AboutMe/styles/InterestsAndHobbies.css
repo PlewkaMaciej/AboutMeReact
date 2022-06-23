@@ -73,7 +73,34 @@
     color: #191919;
     font-family: "Helvetica Now Display DW",sans-serif;
 }
+.video-of-fav-battle{
+    width: 50%;
+    height: 60vh;
+
+}
+.movie-container{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+.fav-video-paragraph{
+    padding-top: 2vh;
+    color: #191919;
+    font-family: "Helvetica Now Display DW",sans-serif;
+    padding-bottom: 10vh;
+}
 @media only screen and (max-width: 1000px){
+    .movie-container{
+        padding-top: 2vh;
+    }
+    .video-of-fav-battle{
+        height: 250px;
+        width: 250px;
+    }
     .training-photo{
         width: 250px;
         height: 250px;

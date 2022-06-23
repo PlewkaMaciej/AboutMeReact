@@ -18,6 +18,18 @@ function InterestsAndHobbies() {
                     <img className="training-photo" src={trainingPhoto} alt="trainingPhoto" />
                     <p className='training-photo-paragraph'>Photo from training</p>
                 </div>
+
+            </div>
+            <div className='movie-container'>
+                <iframe
+                    className='video-of-fav-battle'
+                    src="http://www.youtube.com/embed/9MiwQO-qhpc"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    title="video"
+                    allowFullScreen
+                />
+                <p className='fav-video-paragraph'>My favorite boxing fight</p>
             </div>
         </div>
     );
